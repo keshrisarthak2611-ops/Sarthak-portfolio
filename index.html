@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sarthak Keshri student portfolio: CSE AIDD, interests, and learning journey.">
+  <title>Sarthak Keshri | Student Portfolio</title>
+  <style>
+    :root { --ink:#18312f; --muted:#5d706d; --cream:#f7f5ef; --paper:#fffefa; --green:#176b5b; --mint:#d9eee5; --line:#e5e8df; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--cream); color:var(--ink); font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; line-height:1.6; }
+    a { color:inherit; }
+    .wrap { width:min(1080px, calc(100% - 40px)); margin:auto; }
+    header { padding:24px 0; }
+    nav { display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { color:var(--green); font-weight:800; letter-spacing:.04em; text-decoration:none; }
+    .navlinks { display:flex; flex-wrap:wrap; gap:22px; }
+    .navlinks a { color:var(--muted); text-decoration:none; font-size:.94rem; }
+    .navlinks a:hover, .text-link:hover { color:var(--green); }
+    .hero { display:grid; grid-template-columns:1.4fr .8fr; align-items:center; gap:48px; padding:70px 0 88px; }
+    .eyebrow { color:var(--green); font-size:.78rem; font-weight:800; letter-spacing:.16em; text-transform:uppercase; }
+    h1 { max-width:720px; margin:12px 0 18px; font-size:clamp(2.7rem, 7vw, 5.3rem); line-height:1.03; letter-spacing:-.055em; }
+    .intro { max-width:600px; color:var(--muted); font-size:1.15rem; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
+    .button { display:inline-flex; align-items:center; justify-content:center; min-height:46px; padding:11px 18px; border:1px solid var(--green); border-radius:999px; background:var(--green); color:white; text-decoration:none; font-weight:700; }
+    .button.secondary { background:transparent; color:var(--green); }
+    .portrait { display:grid; place-items:center; width:min(100%, 310px); aspect-ratio:1; justify-self:center; overflow:hidden; border:12px solid var(--paper); border-radius:48% 52% 45% 55% / 48% 43% 57% 52%; background:var(--mint); box-shadow:0 16px 45px #18312f12; }
+    .portrait span { padding:20px; color:var(--green); text-align:center; font-size:1rem; font-weight:700; }
+    section { padding:68px 0; scroll-margin-top:20px; }
+    .section-head { margin-bottom:28px; }
+    h2 { margin:5px 0 8px; font-size:clamp(1.9rem, 4vw, 2.7rem); line-height:1.15; letter-spacing:-.035em; }
+    .section-head p, .card p { color:var(--muted); }
+    .about-grid { display:grid; grid-template-columns:1.1fr .9fr; gap:24px; }
+    .card { padding:26px; border:1px solid var(--line); border-radius:20px; background:var(--paper); }
+    .card h3 { margin:0 0 8px; font-size:1.12rem; }
+    .card p { margin:0; }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .tag { display:inline-block; margin-top:18px; padding:5px 10px; border-radius:999px; background:var(--mint); color:var(--green); font-size:.8rem; font-weight:700; }
+    .skills { display:flex; flex-wrap:wrap; gap:10px; }
+    .skill { padding:9px 14px; border:1px solid var(--line); border-radius:999px; background:var(--paper); color:var(--muted); }
+    .contact { padding:38px; border-radius:24px; background:var(--ink); color:white; }
+    .contact p { max-width:620px; color:#d3e0dc; }
+    .contact .button { border-color:white; background:white; color:var(--ink); }
+    footer { padding:26px 0 36px; color:var(--muted); font-size:.9rem; }
+    footer .wrap { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+    @media (max-width:700px) { .hero { grid-template-columns:1fr; gap:32px; padding:48px 0 60px; } .portrait { grid-row:1; width:210px; } .about-grid,.cards { grid-template-columns:1fr; } section { padding:52px 0; } .navlinks { gap:12px; } .navlinks a { font-size:.85rem; } }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <nav aria-label="Main navigation">
+      <a class="brand" href="#home">SARTHAK KESHRI</a>
+      <div class="navlinks">
+        <a href="#about">About</a><a href="#education">Education</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero wrap" id="home">
+      <div>
+        <div class="eyebrow">Student · Curious mind · Future [Your Goal]</div>
+        <h1>Hello, I’m Sarthak Keshri.</h1>
+        <p class="intro">I’m an 18-year-old student studying CSE AIDD at Jain (Deemed-to-be) University. I enjoy discovering new things, learning about technology, and taking on new challenges.</p>
+        <div class="actions">
+          <a class="button" href="#education">Explore my page</a>
+          <a class="button secondary" href="https://www.linkedin.com/in/sarthak-keshri-4844a4424?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="about">
+      <div class="section-head"><div class="eyebrow">A little about me</div><h2>Learning with purpose.</h2></div>
+      <div class="about-grid">
+        <article class="card"><h3>My story</h3><p>I am Sarthak, an 18-year-old CSE AIDD student. I am curious about technology and enjoy learning new things. I am just getting started with coding and looking forward to building my skills step by step.</p></article>
+        <article class="card"><h3>Outside the classroom</h3><p>I enjoy playing sports and listening to music in my free time.</p></article>
+      </div>
+    </section>
+
+    <section class="wrap" id="education">
+      <div class="section-head"><div class="eyebrow">My learning</div><h2>Education</h2><p>My academic background.</p></div>
+      <div class="cards">
+        <article class="card"><h3>S.T.S.V Public School</h3><p>School education</p><span class="tag">Education</span></article>
+        <article class="card"><h3>Learning coding languages</h3><p>I am exploring coding languages and taking my first steps into programming.</p><span class="tag">Learning</span></article>
+      </div>
+    </section>
+
+    <section class="wrap" id="skills">
+      <div class="section-head"><div class="eyebrow">What I bring</div><h2>Skills I’m building</h2><p>Update these to match your real skills and experience.</p></div>
+      <div class="skills"><span class="skill">Communication</span><span class="skill">Teamwork</span><span class="skill">Research</span><span class="skill">Problem-solving</span><span class="skill">Critical thinking</span><span class="skill">Confidence building</span></div>
+    </section>
+
+    <section class="wrap" id="contact">
+      <div class="contact"><div class="eyebrow" style="color:#a6ddc8">Let’s connect</div><h2>Thanks for visiting!</h2><p>I’m always happy to connect with fellow students, learn about new opportunities, and share ideas.</p><div class="actions">
+        <a class="button" href="mailto:keshrisarthak2611@gmail.com">Email me</a>
+        <a class="button" href="https://www.linkedin.com/in/sarthak-keshri-4844a4424?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a class="button" href="https://www.instagram.com/ceravoid.26?stkn=MWhwdXZzeWNhZDU5eA==" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+      </div></div>
+    </section>
+  </main>
+  <footer><div class="wrap"><span>© <span id="year"></span> Sarthak Keshri</span><span>Made with curiosity and a little help from AI.</span></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+
+
+
+
+
